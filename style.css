@@ -1,0 +1,50 @@
+body {
+  text-align: center;
+  background-color: wheat;
+}
+
+body::before {
+  content: "";
+  width: 100%;
+  height: 200vh;
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: 1;
+  background-image: linear-gradient(
+    45deg,
+    rgb(67, 147, 163) 0%,
+    rgb(67, 147, 163) 59%,
+    rgb(93, 161, 169) 59%,
+    rgb(93, 161, 169) 65%,
+    rgb(119, 175, 175) 65%,
+    rgb(119, 175, 175) 70%,
+    rgb(145, 190, 181) 70%,
+    rgb(145, 190, 181) 73%,
+    rgb(171, 204, 187) 73%,
+    rgb(171, 204, 187) 78%,
+    rgb(197, 218, 193) 78%,
+    rgb(197, 218, 193) 100%
+  );
+
+  opacity: 0.3;
+}
+
+h1 {
+  font-size: 3em;
+  position: relative;
+  z-index: 2;
+}
+
+#container {
+  position: absolute;
+  z-index: 3;
+}
+
+.pokemon {
+  display: inline-block;
+  text-align: center;
+}
+.pokemon img {
+  display: block;
+}
